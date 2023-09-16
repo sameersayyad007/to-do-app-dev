@@ -2,37 +2,51 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background: #d9a7c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+  background-color: #7863aa;
+  min-height: 600px;
+  width: 500px;
+  margin: 40px auto;
+  border-radius: 0px 80px 0px 80px;
+  background-image: url('https://img.freepik.com/free-vector/elegant-alcohol-ink-hand-painted-background-with-gold-glitter-elements_1048-15378.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#to-do-form input{
+  background-color: rgb(22, 164, 207);
+  border: 0;
+  width: 200px;
+  height: 59px;
+  padding: 0 20px;
+  margin: 20px;
+  font-size: 18px;
   color: white;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+#to-do-form input::placeholder{
+font-size: 22px;
+color: white;
+}
+#to-do-form input:focus{
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#to-do-form button{
+height: 50px;
+width: 80px;
+border: none;
+font-size: 20px;
+border-radius: 5px;
+background-color: #f3b9de;
+cursor: pointer;
+color: blueviolet;
 }
